@@ -1,1 +1,1 @@
-# odin-thors-landing-page
+# odin-thors-landing
