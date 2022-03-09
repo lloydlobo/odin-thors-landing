@@ -348,3 +348,6 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+.vscode/settings.json
+assets/reference/colors_and_stuff.png
+assets/reference/odin-project.png
