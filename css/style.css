@@ -4,13 +4,21 @@
   --ff-sans-normal: "Roboto", sans-serif;
 
   /* font size- mobile*/
-  --fs-300: 1rem; /* 16px */
-  --fs-400: 1.125rem; /* p - 18px */
-  --fs-500: 1.266rem; /* h4 - 20.25px */
-  --fs-600: 1.424rem; /* h3 - 22.78px */
-  --fs-700: 1.602rem; /* h2 - 25.63px */
-  --fs-800: 1.802rem; /* h1 - 28.83px */
-  --fs-900: 2.027rem;
+  /* --fs-300: 1rem; --fs-400: 1.125rem; --fs-500: 1.266rem; --fs-600: 1.424rem; --fs-700: 1.602rem; --fs-800: 1.802rem; --fs-900: 2.027rem; */
+
+
+/* lrg screen */
+    /* scale avg. 1.414 */
+    --fs-300: 0.8rem; /* 12.8px */
+    --fs-400: 1rem; /* p - 16px */
+    --fs-500: 1.125rem; /* h4 - 18px */
+    --fs-600: 1.5rem; /* h3 - 24px */
+    --fs-700: 2.25rem; /* h2 - 36px */
+    --fs-800: 3rem; /* h1 - 48px */
+    --fs-900: 3.375rem;
+
+
+
 
   /* * colors */
   /* ---- global experimental ----- */
@@ -109,9 +117,19 @@ h3,
 h4,
 p {
   max-width: 64ch;
-  min-width: 12ch;
 }
+@media screen and (max-width: 40em) {
 
+  h2,
+  h1{
+
+    min-width: 8ch;
+ }
+h3,
+h4, p {
+    min-width: 12ch;
+ }
+}
 /* * */
 /* * typography */
 /* * */
@@ -119,11 +137,11 @@ p {
 /* * font size */
 h1,
 .h1 {
-  font-size: var(--fs-800);
+  font-size: clamp(var(--fs-600), min(13vw, var(--fs-800)), var(--fs-800));
 }
 h2,
 .h2 {
-  font-size: var(--fs-700);
+  font-size: clamp(var(--fs-500), min(10vw, var(--fs-700)), var(--fs-700));
 }
 h3,
 .h3 {
@@ -167,12 +185,13 @@ button {
   background-color: var(--clr-primary-400);
   padding: calc(var(--fs-300) / 1.125) var(--fs-500);
   border: 0;
-  border-radius: 0.5em;
+  border-radius: 0.3em;
+  font-size: var(--fs-500);
+  font-weight: bold;
   /* width: 100%; */
   /* max-width: clamp(14ch, 14ch + 5vw, 22ch); */
   /* ! this helps the button retain it's width when inside flex parent */
   /* align-self: flex-start; */
-  font-size: var(--fs-500);
 }
 
 /* // */
@@ -248,8 +267,14 @@ button {
 
 /* buttons */
 .btn-cta {
-  /* ! this helps the button retain it's width when inside flex parent */
+  /* align-self: flex-start; */
+}
+
+@media screen and (min-width: 40em) {
+  .btn-cta {
+   /* ! this helps the button retain it's width when inside flex parent */
   align-self: flex-start;
+}
 }
 
 .btn-ghost {
@@ -258,17 +283,19 @@ button {
   border: 1px solid var(--clr-white-800);
   color: var(--clr-white-800);
 }
-/* // */
+/* * // */
 /* * */
 /* * custom styling starts here */
 /* * */
-/* // */
+/* * // */
 
 header {
   background-color: var(--clr-dark-900);
 }
 
+/* * */
 /* * primary navigation */
+/* * */
 
 .primary-nav {
   /* display: flex; */
@@ -318,10 +345,17 @@ header {
   color: var(--clr-white-800);
   margin: 0;
   padding: 0;
+  text-align: center;
 }
-
 .hero-start p {
   color: var(--clr-neutral-400);
+  text-align: center;
+}
+
+@media  screen and (min-width: 40em){
+.hero-start h1, .hero-start p{
+  text-align: left;
+  }
 }
 
 /* hero end */
