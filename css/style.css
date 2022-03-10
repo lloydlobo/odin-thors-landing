@@ -162,6 +162,19 @@ textarea {
   font: inherit;
 }
 
+button {
+  color: var(--clr-white-900);
+  background-color: var(--clr-primary-400);
+  padding: calc(var(--fs-300) / 1.125) var(--fs-500);
+  border: 0;
+  border-radius: 0.5em;
+  /* width: 100%; */
+  /* max-width: clamp(14ch, 14ch + 5vw, 22ch); */
+  /* ! this helps the button retain it's width when inside flex parent */
+  /* align-self: flex-start; */
+  font-size: var(--fs-500);
+}
+
 /* // */
 /* * */
 /* * utility classes */
@@ -232,6 +245,19 @@ textarea {
 .bg-grey {
   background-color: var(--clr-neutral-400);
 }
+
+/* buttons */
+.btn-cta {
+  /* ! this helps the button retain it's width when inside flex parent */
+  align-self: flex-start;
+}
+
+.btn-ghost {
+  background: none;
+  background-color: none;
+  border: 1px solid var(--clr-white-800);
+  color: var(--clr-white-800);
+}
 /* // */
 /* * */
 /* * custom styling starts here */
@@ -252,6 +278,7 @@ header {
 }
 
 .primary-nav ul {
+  align-items: center;
   color: var(--clr-neutral-400);
   gap: 2em;
 }
@@ -259,6 +286,10 @@ header {
 .primary-nav ul > * {
   font-size: var(--fs-500);
   font-weight: 300;
+}
+
+.primary-nav .btn-ghost {
+  font-size: var(--fs-300);
 }
 
 /* logo text */
@@ -294,19 +325,14 @@ header {
 }
 
 /* hero end */
-picture .hero-end img {
-  background-color: var(--clr-white-800);
+.hero-end {
+  overflow: hidden;
 }
-
-.btn-cta {
-  color: var(--clr-white-900);
-  background-color: var(--clr-primary-400);
-  padding: calc(var(--fs-300) / 1.125) var(--fs-700);
-  border: 0;
-  border-radius: 0.5em;
-  /* ! this helps the button retain it's width when inside flex parent */
-  align-self: flex-start;
-  font-size: var(--fs-500);
+img .hero-end__image {
+  background-color: var(--clr-bg-dark) !important;
+  object-fit: cover;
+  height: 100%;
+  overflow: hidden;
 }
 
 /* * */
