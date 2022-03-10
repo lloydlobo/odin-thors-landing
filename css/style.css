@@ -8,6 +8,9 @@
   --section-spacing: 4em;
   /* spacing for h2, h3 and p */
   --flow-spacer: 0.75em;
+  /* * color */
+  /* utility */
+  --clr-dark-900: #1f2937;
 }
 
 html {
@@ -71,14 +74,14 @@ p {
   display: flex;
   flex-direction: column;
 }
-
-/*  */
-/*  */
+/* // */
+/* * */
 /* * custom styling starts here */
-/*  */
-/*  */
+/* * */
+/* // */
 
 header {
+  background-color: var(--clr-dark-900);
 }
 
 .primary-nav {
