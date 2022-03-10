@@ -2,20 +2,41 @@
   /* * typography */
   /* font family */
   --ff-sans-normal: "Roboto", sans-serif;
+
   /* font size */
+  --fs-300: 0.8rem;
+  --fs-400: 1rem; /* p */
+  --fs-500: 1.125rem; /* h4 */
+  --fs-600: 1.5rem;
+  --fs-700: 2.25rem;
+  --fs-800: 3rem; /* h1 */
+  --fs-900: 3.375rem;
+
+  /* * colors */
+  /* light */
+  --clr-white-800: #f9faf8;
+  --clr-white-900: hsl(0, 0%, 100%);
+
   /* dark */
   --clr-dark-900: #1f2937;
   --clr-dark-800: #1f2937;
   --clr-dark-300: hsl(215, 28%, 90%);
+
+  /* neutrals */
+  --clr-neutral-400: #e5e7eb;
+
+  /* primary */
+  --clr-primary-400: #3882f6;
+
+  /* secondary */
+  --clr-secondary-400: #f5b738;
+
+  /* * spacing | box | size */
   /* margin for sections */
   --section-spacing: 4em;
+
   /* spacing for h2, h3 and p */
   --flow-spacer: 0.75em;
-  /* * color */
-  --clr-white-900: hsl(0, 0%, 100%);
-  /* utility */
-  --clr-dark-900: #1f2937;
-  --clr-dark-300: hsl(215, 28%, 90%);
 }
 
 html {
@@ -31,12 +52,17 @@ body {
   overflow-x: hidden;
 }
 
+/* * */
+/* * all set to default */
+/* * */
 *,
 ::before,
 ::after {
   margin: 0;
   padding: 0;
 }
+
+/* * list default */
 
 ul,
 li {
@@ -50,6 +76,39 @@ h4,
 p {
   max-width: 64ch;
   min-width: 12ch;
+}
+
+/* * */
+/* * typography */
+/* * */
+
+/* * font size */
+h1,
+.h1 {
+  font-size: var(--fs-800);
+}
+h2,
+.h2 {
+  font-size: var(--fs-700);
+}
+h3,
+.h3 {
+  font-size: var(--fs-600);
+}
+h4,
+.h4 {
+  font-size: var(--fs-500);
+}
+p,
+.p {
+  font-size: var(--fs-400);
+}
+
+/* * font-weight */
+
+h1,
+h2 {
+  font-weight: 900;
 }
 
 /* // */
@@ -68,6 +127,7 @@ p {
 .home-section {
   margin-bottom: var(--section-spacing);
 }
+
 /* spacing for h2, h3 and p */
 .flow > * + * {
   margin-top: var(--flow-spacer, 0.75em);
@@ -106,6 +166,11 @@ p {
 /* * color */
 .bg-dark {
   background-color: var(--clr-dark-900);
+  /* color: var(--clr-white-900); */
+}
+
+.bg-grey {
+  background-color: var(--clr-neutral-400);
 }
 /* // */
 /* * */
@@ -114,12 +179,6 @@ p {
 /* // */
 
 header {
-  /* box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.07),
-    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.05),
-    12.5px 12.5px 10px rgba(0, 0, 0, 0.042),
-    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.035),
-    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.028),
-    100px 100px 80px rgba(0, 0, 0, 0.02); */
   background-color: var(--clr-dark-900);
 }
 
