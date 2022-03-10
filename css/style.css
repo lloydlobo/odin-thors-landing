@@ -1,0 +1,21 @@
+:root {
+  --ff-sans-normal: "Roboto", sans-serif;
+}
+
+html {
+  background-color: #000000;
+}
+
+body {
+  font-family: var(--ff-sans-normal);
+  min-height: 100vh;
+  /* margin: 0 auto; */
+  background-color: #fff;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  /* padding: 0; */
+}
