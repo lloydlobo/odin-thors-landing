@@ -47,13 +47,14 @@
 
   /* * spacing | box | size */
   /* margin for sections */
-  --section-spacing: 4em;
+  --section-spacing: 6em;
 
   /* spacing for h2, h3 and p */
   --flow-spacer: 0.75em;
 }
 
 html {
+  scroll-behavior: smooth;
   background-color: var(--clr-dark-300);
 }
 
@@ -125,6 +126,23 @@ h2 {
   font-weight: 900;
 }
 
+/* * default picture img */
+/* make images and pictures easier to work with */
+img,
+image,
+picture {
+  display: block;
+  max-width: 100%;
+  background-color: var(--clr-white-800);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
 /* // */
 /* * */
 /* * utility classes */
@@ -133,22 +151,24 @@ h2 {
 
 /* * sizing */
 .container {
-  max-width: 62.5em;
+  max-width: 63.5em;
   margin: 0 auto;
   padding: 0 1.5em;
 }
 
+/* * padding for all sections */
 .home-section {
-  margin-bottom: var(--section-spacing);
+  padding: var(--section-spacing) 0;
 }
 
-/* spacing for h2, h3 and p */
+/* * spacing for h2, h3 and p */
 .flow > * + * {
   margin-top: var(--flow-spacer, 0.75em);
 }
-
+/* // */
 /* * flexing */
-/* flex row - flex-column */
+/* // flex row - flex-column */
+
 .flex-row {
   display: flex;
 }
@@ -157,7 +177,7 @@ h2 {
   display: flex;
   flex-direction: column;
 }
-
+/* // */
 /* * accessibility */
 
 /* text and elements only for screen readers - hides from view */
@@ -177,6 +197,7 @@ h2 {
   width: auto;
 }
 
+/* // */
 /* * color */
 .bg-dark {
   background-color: var(--clr-dark-800);
@@ -200,15 +221,21 @@ header {
 
 .primary-nav {
   /* display: flex; */
-  padding: 2em 0;
+  padding: 1em 0;
   justify-content: space-between;
   align-items: center;
 }
 
 .primary-nav ul {
   color: var(--clr-neutral-400);
-  gap: 1em;
+  gap: 2em;
 }
+
+.primary-nav ul > * {
+  font-size: var(--fs-500);
+  font-weight: 300;
+}
+
 /* logo text */
 
 .logo-text {
@@ -218,6 +245,42 @@ header {
 /* * */
 /* * hero section */
 /* * */
+
+.hero-wrapper {
+  gap: 3em;
+  justify-content: center;
+}
+/* hero start */
+.hero-start {
+  padding: 1em 0;
+  gap: var(--fs-500);
+}
+
+.hero-start h1 {
+  color: var(--clr-white-800);
+  margin: 0;
+  padding: 0;
+}
+
+.hero-start p {
+  color: var(--clr-neutral-400);
+}
+
+/* hero end */
+.hero-end img {
+  background-color: var(--clr-white-800);
+}
+
+.btn-cta {
+  color: var(--clr-white-900);
+  background-color: var(--clr-primary-400);
+  padding: calc(var(--fs-300) / 1.125) var(--fs-700);
+  border: 0;
+  border-radius: 0.5em;
+  /* ! this helps the button retain it's width when inside flex parent */
+  align-self: flex-start;
+  font-size: var(--fs-500);
+}
 /* // */
 /* * features section */
 
