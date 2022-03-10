@@ -4,32 +4,46 @@
   --ff-sans-normal: "Roboto", sans-serif;
 
   /* font size */
-  --fs-300: 0.8rem;
-  --fs-400: 1rem; /* p */
-  --fs-500: 1.125rem; /* h4 */
-  --fs-600: 1.5rem;
-  --fs-700: 2.25rem;
-  --fs-800: 3rem; /* h1 */
+  --fs-300: 0.8rem; /* 12.8px */
+  --fs-400: 1rem; /* p - 16px */
+  --fs-500: 1.125rem; /* h4 - 18px */
+  --fs-600: 1.5rem; /* h3 - 24px */
+  --fs-700: 2.25rem; /* h2 - 36px */
+  --fs-800: 3rem; /* h1 - 48px */
   --fs-900: 3.375rem;
 
   /* * colors */
+  /* ---- global experimental ----- */
+  /* rgb */
+  --r: 31;
+  --g: 41;
+  --b: 55;
+  /* rgb variation */
+  --text-color: rgb(var(--r), var(--g), var(--b));
+
+  /* --- standard colors --- */
   /* light */
-  --clr-white-800: #f9faf8;
-  --clr-white-900: hsl(0, 0%, 100%);
+  --clr-white-700: #ccd5c3;
+  --clr-white-800: #f9faf8; /* hero text */
+  --clr-white-900: #ffffff;
 
   /* dark */
-  --clr-dark-900: #1f2937;
-  --clr-dark-800: #1f2937;
-  --clr-dark-300: hsl(215, 28%, 90%);
+  --clr-dark-800: #1f2937; /* header + bg-dark + quote text */
+  --clr-dark-900: #000000;
 
   /* neutrals */
-  --clr-neutral-400: #e5e7eb;
+  --clr-neutral-400: #e5e7eb; /* hero secnd text + quote sect bg */
+  --clr-neutral-800: #7c828b;
 
   /* primary */
-  --clr-primary-400: #3882f6;
+  --clr-primary-400: #3882f6; /* button */
 
   /* secondary */
   --clr-secondary-400: #f5b738;
+
+  /* - special - */
+  /* quote */
+  --clr-quote-400: #1f2937; /* quote text clr */
 
   /* * spacing | box | size */
   /* margin for sections */
@@ -48,7 +62,7 @@ body {
   min-height: 100vh;
   /* margin: 0 auto; */
   background-color: var(--clr-white-900);
-
+  /* color: var(--text-color); */
   overflow-x: hidden;
 }
 
@@ -165,7 +179,7 @@ h2 {
 
 /* * color */
 .bg-dark {
-  background-color: var(--clr-dark-900);
+  background-color: var(--clr-dark-800);
   /* color: var(--clr-white-900); */
 }
 
@@ -182,12 +196,29 @@ header {
   background-color: var(--clr-dark-900);
 }
 
+/* * primary navigation */
+
 .primary-nav {
   /* display: flex; */
   padding: 2em 0;
   justify-content: space-between;
+  align-items: center;
 }
 
+.primary-nav ul {
+  color: var(--clr-neutral-400);
+  gap: 1em;
+}
+/* logo text */
+
+.logo-text {
+  color: var(--clr-white-800);
+}
+
+/* * */
+/* * hero section */
+/* * */
+/* // */
 /* * features section */
 
 .features {
@@ -199,6 +230,10 @@ header {
   flex-direction: column;
   gap: var(--flow-spacer);
 }
+
+/* * */
+/* * quote section */
+/* * */
 
 /* * */
 /* * footer */
