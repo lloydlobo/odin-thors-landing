@@ -1,0 +1,100 @@
+:root {
+  /* * typography */
+  /* font family */
+  --ff-sans-normal: "Roboto", sans-serif;
+  /* font size */
+  /* * spacing | box | size*/
+  /* margin for sections */
+  --section-spacing: 4em;
+  /* spacing for h2, h3 and p */
+  --flow-spacer: 0.75em;
+}
+
+html {
+  background-color: #000000;
+}
+
+body {
+  font-family: var(--ff-sans-normal);
+  min-height: 100vh;
+  /* margin: 0 auto; */
+  background-color: #fff;
+
+  overflow-x: hidden;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  max-width: 64ch;
+  min-width: 12ch;
+}
+
+/* * */
+/* * utility classes */
+/* * */
+
+.container {
+  max-width: 62.5em;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+.home-section {
+  margin-bottom: var(--section-spacing);
+}
+/* spacing for h2, h3 and p */
+.flow > * + * {
+  margin-top: var(--flow-spacer, 0.75em);
+}
+
+/* flex row - flex-column */
+.flex-row {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/*  */
+/*  */
+/* * custom styling starts here */
+/*  */
+/*  */
+
+header {
+}
+
+.primary-nav {
+  /* display: flex; */
+  padding: 2em 0;
+  justify-content: space-between;
+}
+
+/* * features section */
+
+.features {
+  gap: calc(var(--section-spacing) / 2);
+}
+
+.features li {
+  display: flex;
+  flex-direction: column;
+  gap: var(--flow-spacer);
+}
