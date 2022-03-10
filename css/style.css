@@ -49,11 +49,13 @@ p {
   min-width: 12ch;
 }
 
+/* // */
 /* * */
 /* * utility classes */
 /* * */
+/* // */
 
-/* sizing */
+/* * sizing */
 .container {
   max-width: 62.5em;
   margin: 0 auto;
@@ -68,6 +70,7 @@ p {
   margin-top: var(--flow-spacer, 0.75em);
 }
 
+/* * flexing */
 /* flex row - flex-column */
 .flex-row {
   display: flex;
@@ -77,7 +80,27 @@ p {
   display: flex;
   flex-direction: column;
 }
-/* color */
+
+/* * accessibility */
+
+/* text and elements only for screen readers - hides from view */
+.screenreader-accessibility-text {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  height: 1px;
+  width: 1px;
+}
+
+.screenreader-accessibility-text:focus {
+  display: inline-block;
+  position: static;
+  height: auto;
+  margin: auto;
+  width: auto;
+}
+
+/* * color */
 .bg-dark {
   background-color: var(--clr-dark-900);
 }
