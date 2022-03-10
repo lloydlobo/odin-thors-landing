@@ -3,7 +3,10 @@
   /* font family */
   --ff-sans-normal: "Roboto", sans-serif;
   /* font size */
-  /* * spacing | box | size*/
+  /* dark */
+  --clr-dark-900: #1f2937;
+  --clr-dark-800: #1f2937;
+  --clr-dark-300: hsl(215, 28%, 90%);
   /* margin for sections */
   --section-spacing: 4em;
   /* spacing for h2, h3 and p */
