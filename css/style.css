@@ -330,8 +330,7 @@ header {
 /* * */
 
 .hero-wrapper {
-  gap: var(--flow-spacer);
-  justify-content: space-between;
+gap: clamp(var(--flow-spacer), min(var(--flow-spacer) + 2.6vw, var(--fs-900)), 4em);  justify-content: space-between;
   flex-grow: 0;
   /* align-items: flex-start; */
 }
