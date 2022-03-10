@@ -6,19 +6,15 @@
   /* font size- mobile*/
   /* --fs-300: 1rem; --fs-400: 1.125rem; --fs-500: 1.266rem; --fs-600: 1.424rem; --fs-700: 1.602rem; --fs-800: 1.802rem; --fs-900: 2.027rem; */
 
-
-/* lrg screen */
-    /* scale avg. 1.414 */
-    --fs-300: 0.8rem; /* 12.8px */
-    --fs-400: 1rem; /* p - 16px */
-    --fs-500: 1.125rem; /* h4 - 18px */
-    --fs-600: 1.5rem; /* h3 - 24px */
-    --fs-700: 2.25rem; /* h2 - 36px */
-    --fs-800: 3rem; /* h1 - 48px */
-    --fs-900: 3.375rem;
-
-
-
+  /* lrg screen */
+  /* scale avg. 1.414 */
+  --fs-300: 0.8rem; /* 12.8px */
+  --fs-400: 1rem; /* p - 16px */
+  --fs-500: 1.125rem; /* h4 - 18px */
+  --fs-600: 1.5rem; /* h3 - 24px */
+  --fs-700: 2.25rem; /* h2 - 36px */
+  --fs-800: 3rem; /* h1 - 48px */
+  --fs-900: 3.375rem;
 
   /* * colors */
   /* ---- global experimental ----- */
@@ -119,16 +115,15 @@ p {
   max-width: 64ch;
 }
 @media screen and (max-width: 40em) {
-
   h2,
-  h1{
-
+  h1 {
     min-width: 8ch;
- }
-h3,
-h4, p {
+  }
+  h3,
+  h4,
+  p {
     min-width: 12ch;
- }
+  }
 }
 /* * */
 /* * typography */
@@ -272,9 +267,9 @@ button {
 
 @media screen and (min-width: 40em) {
   .btn-cta {
-   /* ! this helps the button retain it's width when inside flex parent */
-  align-self: flex-start;
-}
+    /* ! this helps the button retain it's width when inside flex parent */
+    align-self: flex-start;
+  }
 }
 
 .btn-ghost {
@@ -330,7 +325,12 @@ header {
 /* * */
 
 .hero-wrapper {
-gap: clamp(var(--flow-spacer), min(var(--flow-spacer) + 2.6vw, var(--fs-900)), 4em);  justify-content: space-between;
+  gap: clamp(
+    var(--flow-spacer),
+    min(var(--flow-spacer) + 2.6vw, var(--fs-900)),
+    4em
+  );
+  justify-content: space-between;
   flex-grow: 0;
   /* align-items: flex-start; */
 }
@@ -351,9 +351,10 @@ gap: clamp(var(--flow-spacer), min(var(--flow-spacer) + 2.6vw, var(--fs-900)), 4
   text-align: center;
 }
 
-@media  screen and (min-width: 40em){
-.hero-start h1, .hero-start p{
-  text-align: left;
+@media screen and (min-width: 40em) {
+  .hero-start h1,
+  .hero-start p {
+    text-align: left;
   }
 }
 
