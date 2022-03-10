@@ -9,19 +9,21 @@
   /* spacing for h2, h3 and p */
   --flow-spacer: 0.75em;
   /* * color */
+  --clr-white-900: hsl(0, 0%, 100%);
   /* utility */
   --clr-dark-900: #1f2937;
+  --clr-dark-300: hsl(215, 28%, 90%);
 }
 
 html {
-  background-color: #000000;
+  background-color: var(--clr-dark-300);
 }
 
 body {
   font-family: var(--ff-sans-normal);
   min-height: 100vh;
   /* margin: 0 auto; */
-  background-color: #fff;
+  background-color: var(--clr-white-900);
 
   overflow-x: hidden;
 }
