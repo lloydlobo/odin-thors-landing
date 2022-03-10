@@ -16,58 +16,97 @@
   </head>
   <body>
     <header>
-      <nav>
-        <img src="" alt="" class="logo" />
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+      <nav class="primary-nav flex-row container">
+        <div class="logo-text">
+          <!-- <img src="" alt="" class="logo" /> -->
+          <span>Header Logo</span>
+        </div>
+        <ul class="flex-row">
+          <li>header link one</li>
+          <li>header link two</li>
+          <li>header link three</li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section>
-        <div class="container">
-          <h1 class="hero__title"></h1>
-          <div class="hero__paragraph"></div>
-          <button class="btn-cta"></button>
-          <picture></picture>
+      <section class="home-section">
+        <div class="container flow flex-row">
+          <div class="hero">
+            <h1 class="hero__title">This website is awesome</h1>
+            <div class="hero__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              suscipit dolore laborum dicta sequi dolor nam, nostrum, voluptas
+              assumenda, itaque exercitationem obcaecati et neque quas alias!
+              Architecto itaque voluptatum eius!
+            </div>
+            <button class="btn-cta">Sign up</button>
+          </div>
+          <picture
+            ><img src="https://source.unsplash.com/random/500x300" alt=""
+          /></picture>
         </div>
       </section>
-      <section>
-        <div class="container">
-          <h2></h2>
-          <ul>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
+      <section class="home-section">
+        <div class="container flow flex-column">
+          <h2>Some random information.</h2>
+          <ul class="features flex-row">
+            <li>
+              <img
+                src="https://source.unsplash.com/random/168x168"
+                alt=""
+              />Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error?
+            </li>
+            <li>
+              <img
+                src="https://source.unsplash.com/random/168x168"
+                alt=""
+              />Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </li>
+            <li>
+              <img
+                src="https://source.unsplash.com/random/168x168"
+                alt=""
+              />Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos,
+              a.
+            </li>
+            <li>
+              <img src="https://source.unsplash.com/random/168x168" alt="" />
+              Lorem ipsum, dolor sit amet consectetur adipisicing.
+            </li>
           </ul>
         </div>
       </section>
-      <section>
-        <div class="container">
+      <section class="home-section">
+        <div class="container flow">
           <div class="quote">
-            <blockquote></blockquote>
-            <div class="author"></div>
+            <blockquote>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos sed
+              quasi aperiam earum doloremque at error voluptate, incidunt
+              provident quas iste aliquid quod. Earum dolor unde aut excepturi
+              quia explicabo.
+            </blockquote>
+            <div class="author"><strong>— Thor, God of Thunder</strong></div>
           </div>
         </div>
       </section>
-      <section>
-        <div class="container">
-          <div class="cta__wrapper">
-            <div class="cta__content">
-              <h2></h2>
-              <p></p>
+      <section class="home-section">
+        <div class="container flow">
+          <div class="cta__wrapper flex-row">
+            <div class="cta__content flex-column">
+              <h2>Call to action! It's time!</h2>
+              <p>
+                Sign up for our product by clicking that button right over
+                there!
+              </p>
             </div>
-            <button class="btn-ghost"></button>
+            <button class="btn-ghost">Sign up</button>
           </div>
         </div>
       </section>
     </main>
-    <footer class="primary-footer">
-      <p class="copyright"></p>
+    <footer class="primary-footer container">
+      <p class="copyright">Copyright &copy; The Odin Project 2022</p>
     </footer>
   </body>
 </html>
