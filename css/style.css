@@ -244,11 +244,6 @@ button {
   align-items: center;
 }
 
-
-
-
-
-
 /* // */
 /* * accessibility */
 
@@ -304,14 +299,10 @@ button {
 /* * */
 /* * // */
 
-
-
 header {
   background-color: var(--clr-dark-900);
   justify-content: space-between;
 }
-
-
 
 /* * */
 /* * primary navigation */
@@ -348,7 +339,6 @@ header {
 
 .primary-nav .btn-ghost {
   font-size: var(--fs-nac-item);
-
 }
 
 /* todo reduce cta ghost font size to nav items*/
