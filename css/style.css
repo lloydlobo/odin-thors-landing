@@ -556,3 +556,13 @@ img .hero-end__image {
 footer {
   background-color: var(--clr-dark-900);
 }
+
+.primary-footer__copyright-header {
+  padding-top: clamp(2em, 2em + 5vw, var(--section-spacing));
+  padding-bottom: clamp(2em, 2em + 5vw, var(--section-spacing));
+}
+
+.primary-footer__copyright-header__text {
+  font-size: var(--fs-300);
+  text-align: center;
+}
