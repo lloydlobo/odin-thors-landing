@@ -360,7 +360,7 @@ header {
   --fs-nav-item: clamp(
     0.5rem,
     max(1vw - var(--fs-300), 0.4vw + var(--fs-300)),
-    var(--fs-500)
+    var(--fs-400)
   );
   font-size: var(--fs-nav-item);
   font-weight: 300;
