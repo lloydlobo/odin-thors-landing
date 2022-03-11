@@ -565,4 +565,5 @@ footer {
 .primary-footer__copyright-header__text {
   font-size: var(--fs-300);
   text-align: center;
+  margin: 0 auto;
 }
