@@ -231,7 +231,14 @@ button {
 .home-section {
   padding: var(--section-spacing) 0;
 }
-
+/* * width & height */
+.width-full {
+  width: 100%;
+}
+/* height auto */
+.height-auto {
+  height: auto;
+}
 /* * spacing for h2, h3 and p */
 .flow > * + * {
   margin-top: var(--flow-spacer, 0.75em);
@@ -449,10 +456,22 @@ img .hero-end__image {
   gap: var(--flow-spacer);
 }
 
+/* todo 1. reduce image size on mobile */
+/* todo 2. add rounded corners to the image */
+.features img {
+  max-width: clamp(31.82vw, 31.82vw + 10vw, 100vw);
+  height: 100%;
+}
+
 @media screen and (min-width: 40em) {
   div .features {
     display: flex;
     flex-direction: row;
+  }
+
+  .features h2 {
+    font-size: clamp(var(--fs-500), min(10vw, var(--fs-700)), var(--fs-700));
+    text-align: center;
   }
 }
 
