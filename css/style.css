@@ -54,13 +54,15 @@
   --section-spacing: 3em;
 
   /* spacing for h2, h3 and p */
-  --flow-spacer: 0.75em;
+  /* --flow-spacer: 2em; */
+  --flow-spacer: 2em;
 }
 
 /* * md section spacing — large screens */
 @media only screen and (min-width: 65em) {
   :root {
     --section-spacing: 6rem;
+    --flow-spacer: 0.75em;
   }
 }
 /* * md font size — small screens */
@@ -231,7 +233,14 @@ button {
 .home-section {
   padding: var(--section-spacing) 0;
 }
-
+/* * width & height */
+.width-full {
+  width: 100%;
+}
+/* height auto */
+.height-auto {
+  height: auto;
+}
 /* * spacing for h2, h3 and p */
 .flow > * + * {
   margin-top: var(--flow-spacer, 0.75em);
@@ -440,7 +449,12 @@ img .hero-end__image {
 /* * features section */
 
 .features {
-  gap: calc(var(--section-spacing) / 2);
+  /* gap: calc(var(--section-spacing) * 0.666); */
+  justify-content: center;
+}
+
+.features ul {
+  justify-content: space-evenly;
 }
 
 .features li {
@@ -449,10 +463,57 @@ img .hero-end__image {
   gap: var(--flow-spacer);
 }
 
+.features li > * {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .features li > * + * {
+  max-width: clamp(12ch, 30vw, 300px);
+}
+ */
+/* todo 1. reduce image size on mobile */
+/* todo 2. add rounded corners to the image */
+.features img {
+  /* max-width: clamp(31.82vw, 31.82vw + 10vw, 100vw); */
+  height: 100%;
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: calc((164 / 16) * 1px);
+  border: 0;
+}
+
 @media screen and (min-width: 40em) {
   div .features {
     display: flex;
     flex-direction: row;
+  }
+
+  .features h2 {
+    font-size: clamp(var(--fs-500), min(10vw, var(--fs-700)), var(--fs-700));
+    text-align: center;
+    margin-bottom: calc(var(--fs-500) * 2);
+  }
+
+  .features img {
+    /* max-width: clamp(31.82vw, 31.82vw + 10vw, 100vw); */
+    min-height: 164px;
+    height: 100%;
+    max-width: 164px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  .features li > * + * {
+    /* max-width: clamp(12ch, 30vw, 300px); */
+    max-width: 164px;
+    text-align: center;
+  }
+  .features ul > * {
+    display: flex;
+    padding: 1px;
+    flex-direction: column;
   }
 }
 
