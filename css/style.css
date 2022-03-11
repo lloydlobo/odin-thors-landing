@@ -520,6 +520,34 @@ img .hero-end__image {
 /* * */
 /* * quote section */
 /* * */
+.quote {
+  gap: var(--flow-spacer);
+}
+.quote blockquote {
+  color: var(--clr-dark-800);
+  font-style: italic;
+  font-weight: 300;
+  font-size: var(--fs-500);
+}
+.quote .author {
+  align-self: flex-end;
+  font-size: var(--fs-400);
+  margin-right: 4ch;
+}
+
+@media screen and (min-width: 40em) {
+  .quote {
+    padding-inline: var(--section-spacing);
+  }
+
+  .quote blockquote {
+    font-size: clamp(var(--fs-500), min(10vw, var(--fs-700)), var(--fs-700));
+  }
+  .quote .author {
+    margin-right: 4ch;
+    font-size: var(--fs-600);
+  }
+}
 
 /* * */
 /* * footer */
