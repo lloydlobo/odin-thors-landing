@@ -216,6 +216,9 @@ button {
   /* align-self: flex-start; */
 }
 
+a {
+  text-decoration: none;
+}
 /* // */
 /* * */
 /* * utility classes */
@@ -566,4 +569,8 @@ footer {
   font-size: var(--fs-300);
   text-align: center;
   margin: 0 auto;
+  color: var(--clr-neutral-400);
+}
+.primary-footer__copyright-header__text a {
+  color: var(--clr-neutral-400);
 }
