@@ -316,8 +316,11 @@ header {
 /* * */
 /* * primary navigation */
 /* * */
-.headerMenu {
+.header-wrapper__menu {
   flex: 0.85 1 auto;
+}
+.header-wrapper {
+  gap: 3rem;
 }
 .primary-nav {
   /* display: flex; */
