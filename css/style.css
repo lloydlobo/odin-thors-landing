@@ -301,24 +301,28 @@ button {
 
 header {
   background-color: var(--clr-dark-900);
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 /* * */
 /* * primary navigation */
 /* * */
 .header-wrapper__menu {
-  flex: 0.85 1 auto;
-}
-.header-wrapper {
+  /* flex: 0.85 1 auto; */
+  flex: 1;
   gap: 3rem;
 }
-.primary-nav {
-  /* display: flex; */
+.header-wrapper {
+  /* gap: 3rem; */
   padding: 1em 0;
+}
+.primary-nav {
+  display: flex;
+  flex: 1;
+  /* padding: 1em 0; */
   /* justify-content: space-between; */
-  align-items: center;
-  gap: 2rem;
+  /* align-items: center; */
+  /* gap: 2rem; */
 }
 
 .primary-nav ul {
