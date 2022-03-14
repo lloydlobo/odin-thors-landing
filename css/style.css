@@ -279,7 +279,7 @@ a {
 }
 
 .flex-items-center {
-  align-items: center;
+  align-items: baseline;
 }
 
 /* // */
@@ -350,7 +350,8 @@ header {
 .header-wrapper__menu {
   /* flex: 0.85 1 auto; */
   flex: 1;
-  gap: 3rem;
+  /* gap: 3rem; */
+  gap: clamp(5ch + 1vw, 6vw, 12vw - 6ch);
 }
 .header-wrapper {
   /* gap: 3rem; */
