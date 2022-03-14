@@ -421,7 +421,8 @@ a {
 
 .logo-text > p:hover,
 a:hover,
-a:focus, a:visited {
+a:focus,
+a:visited {
   color: var(--clr-white-900);
 }
 /* * */
