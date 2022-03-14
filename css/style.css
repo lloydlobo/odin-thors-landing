@@ -104,19 +104,19 @@ body {
 /* * dark mode */
 /* * */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   body {
-    /* color: var(--clr-white-800); */
-    /* background: var(--clr-dark-900); */
-    /* background: color(display-p3 1 0.08 0); */
-    /* background: lab(150% -400 400); */
-    /* background: hsl(from #f06d06 h calc(s + 20%) l / 0.5); */
-    /* background: lch(from red l calc(c + 15) h / 0.25); */
+    color: var(--clr-white-800);
+    background: var(--clr-dark-900);
+    background: color(display-p3 1 0.08 0);
+    background: lab(150% -400 400);
+    background: hsl(from #f06d06 h calc(s + 20%) l / 0.5);
+    background: lch(from red l calc(c + 15) h / 0.25);
   }
   body a {
-    /* color: var(--clr-primary-400); */
+    color: var(--clr-primary-400);
   }
-}
+} */
 
 /* * */
 /* * all set to default */
