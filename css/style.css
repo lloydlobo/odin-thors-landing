@@ -414,10 +414,17 @@ header {
 
 /* logo text */
 
-.logo-text {
+.logo-text > p,
+a {
   color: var(--clr-white-800);
 }
 
+.logo-text > p:hover,
+p:focus,
+a:hover,
+a:focus {
+  color: var(--clr-white-900);
+}
 /* * */
 /* * hero section */
 /* * */
