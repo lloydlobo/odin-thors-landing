@@ -211,6 +211,7 @@ button {
   border-radius: 0.3em;
   font-size: var(--fs-500);
   font-weight: bold;
+  cursor: pointer;
   /* width: 100%; */
   /* max-width: clamp(14ch, 14ch + 5vw, 22ch); */
   /* ! this helps the button retain it's width when inside flex parent */
