@@ -420,9 +420,8 @@ a {
 }
 
 .logo-text > p:hover,
-p:focus,
 a:hover,
-a:focus {
+a:focus, a:visited {
   color: var(--clr-white-900);
 }
 /* * */
