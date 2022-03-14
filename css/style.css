@@ -566,7 +566,9 @@ img .hero-end__image {
   padding: var(--flow-spacer);
   gap: var(--flow-spacer);
 }
-
+.cta h2 {
+  color: var(--clr-white-800);
+}
 .cta__content {
   gap: var(--fs-400);
 }
