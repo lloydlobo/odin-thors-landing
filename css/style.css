@@ -613,6 +613,30 @@ img .hero-end__image {
     flex-direction: row;
   }
 }
+
+/* ** back to top button */
+
+.back-to-top {
+  display: grid;
+  place-items: end;
+}
+
+.back-to-top__button {
+  font-size: xx-small;
+  /* width: max-content; */
+}
+
+button.back-to-top__button {
+  border-radius: 100%;
+  border: 1px solid var(--clr-neutral-800);
+  padding: 0.5rem;
+  margin: 1em 0;
+}
+/* todo add to utility classes */
+.btn-ghost--toggle {
+  color: var(--clr-dark-800);
+}
+
 /* * */
 /* * footer */
 /* * */
